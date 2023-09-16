@@ -9,5 +9,5 @@ package com.ufes;
  * @author Kevin
  */
 public interface ICalculadoraTaxaEntrega {
-    public double calcularTaxaEntrega(Pedido pedido); 
+    public void calcularTaxaEntrega(Pedido pedido); 
 }
