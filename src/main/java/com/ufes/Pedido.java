@@ -15,14 +15,17 @@ public class Pedido
     private double valorTotal;
     private String status;
     private boolean promocao;
-	
-    public Pedido(String cliente, String enderecoEntrega, boolean promocao)
-    {
-	this.cliente = cliente;
+    private double taxaEntrega;
+    private float distancia;
+
+    public Pedido(String cliente, String enderecoEntrega, boolean promocao) {
+        this.cliente = cliente;
         this.enderecoEntrega = enderecoEntrega;
         this.promocao = promocao;
-        this.status = "Pendente";
+        status = "Pendente";
     }
+	
+    
 
     public String getCliente() {
         return cliente;
