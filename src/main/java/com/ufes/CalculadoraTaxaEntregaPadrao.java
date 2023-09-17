@@ -8,7 +8,7 @@ package com.ufes;
  *
  * @author Kevin
  */
-public class CalculadoraTaxaEntregaPadrao {
+public class CalculadoraTaxaEntregaPadrao implements ICalculadoraTaxaEntrega{
     private double fatorPadrao;
 
     public CalculadoraTaxaEntregaPadrao(double fatorPadrao) {
@@ -23,6 +23,7 @@ public class CalculadoraTaxaEntregaPadrao {
         this.fatorPadrao = fatorPadrao;
     }
     
+    @Override
     public void calcularTaxaEntrega(Pedido pedido){
         if(pedido.getTaxaEntrega() == -1)
             pedido.setTaxaEntrega(fatorPadrao);
