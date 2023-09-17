@@ -12,6 +12,9 @@ public class CalculadoraTaxaEntregaDistancia implements ICalculadoraTaxaEntrega{
     private double fatorDistancia;
     private float distanciaMinima;
 
+    public CalculadoraTaxaEntregaDistancia() {
+    }
+
     public CalculadoraTaxaEntregaDistancia(double fatorDistancia) {
         this.fatorDistancia = fatorDistancia;
     }

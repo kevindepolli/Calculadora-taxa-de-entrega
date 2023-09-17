@@ -11,6 +11,9 @@ package com.ufes;
 public class CalculadoraTaxaEntregaPadrao implements ICalculadoraTaxaEntrega{
     private double fatorPadrao;
 
+    public CalculadoraTaxaEntregaPadrao() {
+    }
+
     public CalculadoraTaxaEntregaPadrao(double fatorPadrao) {
         this.fatorPadrao = fatorPadrao;
     }
