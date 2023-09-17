@@ -23,10 +23,9 @@ public class Pedido
         this.enderecoEntrega = enderecoEntrega;
         this.promocao = promocao;
         status = "Pendente";
+        taxaEntrega = -1;
     }
 	
-    
-
     public String getCliente() {
         return cliente;
     }
@@ -66,6 +65,21 @@ public class Pedido
     public void setPromocao(boolean promocao) {
         this.promocao = promocao;
     }
-    
+
+    public double getTaxaEntrega() {
+        return taxaEntrega;
+    }
+
+    public void setTaxaEntrega(double taxaEntrega) {
+        this.taxaEntrega = taxaEntrega;
+    }
+
+    public float getDistancia() {
+        return distancia;
+    }
+
+    public void setDistancia(float distancia) {
+        this.distancia = distancia;
+    }
     
 }
